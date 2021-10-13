@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom,#30cfd0,#330867);
+}
+#left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 70%;
+    background-color:transparent;
+}
+#right{
+    height: 100vh;
+    width: 30%;
+    border-left: 2px solid white;
+    background-color:rgba(255, 255, 255, 0.308);
+    padding: 10px;
+    overflow: auto;
+}
+#center{
+    display: flex;
+    height: 80vh;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+#song{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-image: url("https://images.unsplash.com/photo-1616709062048-788acece6a51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80");
+    background-size: cover;
+    margin-bottom: 10px;
+}
+#center h6{
+    margin: 5px 0;
+}
+#Progress_Status{
+    width: 30%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#myprogressBar{
+    width: 1%;
+    height: 20px;
+    background: linear-gradient(to bottom,#30cfd0,#330867);
+    text-align: center;
+    line-height: 32px;
+    color: black;
+}
+#timings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 29%;
+    color: white;
+}
+#play i{
+    font-size: 25px;
+}
+#play{
+    margin-top: 10px;
+}
+button{
+    width: 50px;
+}
+#playlist{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 10px 20px ;
+    margin-bottom: 10px;
+}
+#track{
+    width: 90%;
+    border-right: 1px solid black;
+    padding-right: 5px;
+    border-top: 1px solid transparent;
+}
